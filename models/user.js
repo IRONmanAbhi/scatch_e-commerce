@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
-  fullName: String,
+  fullname: String,
   email: String,
   password: String,
   cart: [
@@ -10,7 +10,6 @@ const userSchema = mongoose.Schema({
       ref: "product",
     },
   ],
-  isAdmin: Boolean,
   orders: [
     {
       type: mongoose.Schema.Types.ObjectId,
