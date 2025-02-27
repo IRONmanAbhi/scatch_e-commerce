@@ -10,7 +10,7 @@ const ownerSchema = mongoose.Schema({
       ref: "product",
     },
   ],
-  picture: String,
+  picture: Buffer,
   gstin: Number,
 });
 
